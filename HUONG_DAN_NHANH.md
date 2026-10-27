@@ -1,9 +1,10 @@
 # Hướng dẫn mở project và hoàn thiện bài nộp
 
 ## 1. Trước khi nộp
-- Giải nén project; mở thư mục `KiemTra_LapTrinhUngDungDiDong_MSSV` bằng Android Studio.
-- Trong Android Studio, đổi `MSSV` thành mã số sinh viên thật. Phải đổi tên project/repository, `rootProject.name`, `app_name`, `namespace`, `applicationId` và package Kotlin cho trùng nhau.
-- Dùng template **Empty Views Activity**, Kotlin, XML. Project này không bật ViewBinding.
+- Đây là bộ source và cấu hình Gradle kèm lịch sử Git 4 nhánh. Môi trường tạo mẫu không có Gradle Wrapper binary, nên nếu Android Studio không Sync trực tiếp được, cách chắc chắn là tạo một project mới bằng template **Empty Views Activity** rồi chép các file `app/src/main/` từ bộ source này vào project mới; giữ lại `gradlew`, `gradlew.bat` và `gradle/wrapper/` do Android Studio tạo.
+- Đặt Name: `KiemTra_LapTrinhUngDungDiDong_MSSV`, Language: Kotlin, Minimum SDK: API 24. Project này không bật ViewBinding.
+- Thêm các dependency giống `app/build.gradle.kts` trong bộ source, hoặc dùng nguyên file đó nếu phiên bản Android Gradle Plugin trong Android Studio tương thích.
+- Đổi `MSSV` thành mã số sinh viên thật trong `rootProject.name`, `app_name`, `namespace`, `applicationId`, package Kotlin và tên repository; các giá trị phải đồng bộ.
 - Chờ Gradle Sync hoàn tất rồi chạy ứng dụng trên emulator/điện thoại.
 
 ## 2. Các nhánh đã tạo sẵn
