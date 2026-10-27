@@ -1,5 +1,6 @@
 package com.example.kiemtra_laptrinhungdungdidong_mssv
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
@@ -42,7 +43,12 @@ class LoginActivity : AppCompatActivity() {
                     hienThiThongBao(tvStatus, "Email không đúng định dạng!", false)
                 password.length < 6 ->
                     hienThiThongBao(tvStatus, "Mật khẩu phải có ít nhất 6 ký tự!", false)
-                else -> hienThiThongBao(tvStatus, "Xác thực thành công!", true)
+                else -> {
+                    hienThiThongBao(tvStatus, "Xác thực thành công!", true)
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra(ProfileActivity.EXTRA_EMAIL, email)
+                    startActivity(intent)
+                }
             }
         }
     }

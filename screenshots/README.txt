@@ -1,5 +1,7 @@
-CAU 1 - MINH CHUNG
-Them anh chup that tu emulator/device vao thu muc nay:
+MINH CHUNG CAU 1 VA CAU 2
+Cau 1:
 - cau1_validation_error.png
 - cau1_validation_success.png
-Khong dung anh mockup thay cho anh chay app thuc te.
+Cau 2:
+- cau2_profile_intent.png
+Hay them anh chup that vao thu muc nay; khong dung anh mockup.
