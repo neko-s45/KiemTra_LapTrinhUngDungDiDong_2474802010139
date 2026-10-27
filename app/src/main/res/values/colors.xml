@@ -1,0 +1,6 @@
+<resources>
+    <color name="primary">#6750A4</color>
+    <color name="success">#2E7D32</color>
+    <color name="error">#C62828</color>
+    <color name="text_secondary">#666666</color>
+</resources>
